@@ -5,10 +5,12 @@
 }
 
 :root{
-  --color-0A4D68: #0A4D68;
+  --color-056e7e: #056e7e;
   --color-088395: #088395;
   --color-05BFDB: #05BFDB;
   --color-0a7c8e: #0a7c8e;
+  --color-ff9100: #ff9100;
+  --color-e7e7e9:#e7e7e9;
 }
 
 body{
@@ -32,11 +34,24 @@ a{
   gap: 30px;
 }
 
+.button{
+ background-color: var(--color-056e7e);
+ color: white;
+ font-size: 14px;
+ padding: 13px 33px;
+ border-radius: 25px;
+}
+
+.button:hover{
+  background-color: var(--color-05BFDB);
+  color: black;
+}
+
 /* Header Part */
 
 .header-top-strip{
   border-bottom: 1px solid var(--color-05BFDB);
-  background-color: var(--color-0A4D68);
+  background-color: var(--color-056e7e);
 }
 
 .header-upper{
@@ -77,4 +92,118 @@ a{
 .dropdown-menu{
   transform: translate(0px, 57px) !important;
 }
+
+.header-bottom .dropdown-item{
+  padding: 20px;
+  margin-bottom: 3px;
+  border-bottom: 1px solid var(--color-05BFDB);
+}
+
+.header-bottom .dropdown-item:hover{
+  background-color: transparent;
+  color: var(--color-05BFDB) !important;
+}
+
 /* Header Part End Here*/
+
+/* Footer Part*/
+
+footer{
+  background-color: var(--color-088395);
+}
+
+footer:not(:first-child){
+  border-top: 1px solid var(--color-05BFDB);
+}
+
+footer .input-group-text{
+  background-color: var(--color-05BFDB);
+  color: white;
+  padding: 8px 17px !important;
+}
+
+/* Footer Part Ends Here*/
+
+/* Home Page */
+
+.main-banner-content{
+  top: 10%;
+  left: 5%;
+}
+
+.main-banner-content h4{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--color-ff9100);
+  margin: 0 0 12px;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
+
+.main-banner-content h5{
+  font-size: 42px;
+  line-height: 54px;
+  letter-spacing: -2px;
+  font-weight: 500;
+  text-transform: none;
+}
+
+.main-banner-content p{
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.4px;
+}
+
+.small-banner-content{
+  top: 25%;
+  left: 10%;
+}
+
+.small-banner-content h4{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--color-ff9100);
+  margin: 0 0 12px;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
+
+.small-banner-content h5{
+  font-size: 22px;
+  line-height: 34px;
+  letter-spacing: -2px;
+  font-weight: 500;
+  text-transform: none;
+}
+
+.small-banner-content p{
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.4px;
+}
+
+.small-banner{
+  width: 49%;
+}
+
+/* Home wrapper 2 */
+
+.home-wrapper-2{
+  background-color: var(--color-e7e7e9);
+}
+
+/* Home wrapper 2  Ends */
+
+/* Categories Section */
+
+.categories{
+  background-color: white;
+  box-shadow: 0 0 10px #0000001a;
+  padding: 15px;
+}
+
+/* Categories Section  End*/
+
+/* Home Page Ends Here*/
