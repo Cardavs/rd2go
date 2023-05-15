@@ -11,6 +11,7 @@
   --color-0a7c8e: #0a7c8e;
   --color-ff9100: #ff9100;
   --color-e7e7e9:#e7e7e9;
+  --color-ededed:#ededed;
 }
 
 body{
@@ -202,6 +203,35 @@ footer .input-group-text{
   background-color: white;
   box-shadow: 0 0 10px #0000001a;
   padding: 15px;
+}
+
+.categories > div{
+  width: 24%;
+  padding: 10px 10px 10px 20px;
+}
+
+.categories > div > div{
+  width: 60%;
+}
+
+.categories > div:nth-child(1),
+.categories > div:nth-child(2),
+.categories > div:nth-child(3),
+.categories > div:nth-child(4){
+  border-bottom: 1px solid var(--color-ededed);
+}
+
+.categories > div:nth-child(1),
+.categories > div:nth-child(2),
+.categories > div:nth-child(3){
+  border-right: 1px solid var(--color-ededed);
+}
+
+.categories > div:nth-child(5),
+.categories > div:nth-child(6),
+.categories > div:nth-child(7){
+  border-right: 1px solid var(--color-ededed);
+
 }
 
 /* Categories Section  End*/
