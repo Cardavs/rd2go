@@ -205,7 +205,9 @@ const Home = () => {
               <h3 className="section-heading">Productos Especiales</h3>
             </div>
             <div className="row">
-              
+              <SpecialProduct />
+              <SpecialProduct />
+              <SpecialProduct />
             </div>
           </div>
         </div>

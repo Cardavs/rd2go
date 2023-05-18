@@ -39,6 +39,7 @@ a{
   display: inline-block;
 }
 
+
 .gap-10{
   gap: 10px;
 }
@@ -351,3 +352,14 @@ footer .input-group-text{
   right: 15px;
 }
 /* Product Card Ends Here*/
+
+/* Special Product Card */
+
+.special-product-card{
+  	padding: 20px 10px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+
+/* Special Product Card Ends Here*/
