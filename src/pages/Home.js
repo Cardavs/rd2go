@@ -198,6 +198,52 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <section className="famous-wrapper py-5 home-wrapper-2">
+        <div className="container-xxl">
+          <div className="row">
+            <div className="col-3">
+              <div className="famous-card position-relative">
+                <img src="images/famous-1.png" className="img-fluid" alt="famous"/>
+                <div className="famous-content position-absolute">
+                  <h5>Big Screen</h5>
+                  <h6>Smart Watch Series 7</h6>
+                  <p>From $400 $16.7/mes to $11/mes</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-3">
+              <div className="famous-card position-relative">
+                <img src="images/famous-2.png" className="img-fluid" alt="famous"/>
+                <div className="famous-content position-absolute">
+                  <h5 className="text-dark">Studio Display</h5>
+                  <h6 className="text-dark">600 Nits de brillo</h6>
+                  <p className="text-dark">27 pulgadas 5k Display</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-3">
+              <div className="famous-card position-relative">
+                <img src="images/famous-3.png" className="img-fluid" alt="famous"/>
+                <div className="famous-content position-absolute">
+                  <h5 className="text-dark">Smartphone</h5>
+                  <h6 className="text-dark">Smartphone 13 Pro</h6>
+                  <p className="text-dark">From $34400 $1666.7/mes to $1111/mes</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-3">
+              <div className="famous-card position-relative">
+                <img src="images/famous-4.png" className="img-fluid" alt="famous"/>
+                <div className="famous-content position-absolute">
+                  <h5 className="text-dark">Home Speaker</h5>
+                  <h6 className="text-dark">Sonido Envolvente</h6>
+                  <p className="text-dark">From $500 $22.7/mes to $11/mes</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section className='special-wrapper py-5 home-wrapper-2'>
         <div className="container-xxl">
           <div className="row">
@@ -208,7 +254,24 @@ const Home = () => {
               <SpecialProduct />
               <SpecialProduct />
               <SpecialProduct />
+              <SpecialProduct />
             </div>
+          </div>
+        </div>
+      </section>
+      <section className="popular-wrapper py-5 home-wrapper-2">
+        <div className="container-xxl">
+          <div className="row">
+            <div className="col-12">
+              <h3 className="section-heading">Productos Populares</h3>
+            </div>
+            
+          </div>
+          <div className="row">
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
           </div>
         </div>
       </section>

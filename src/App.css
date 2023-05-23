@@ -361,5 +361,67 @@ footer .input-group-text{
     background-color: white;
 }
 
-
 /* Special Product Card Ends Here*/
+
+/* Famous Card */
+
+.famous-card .famous-content{
+  top: 10%;
+  left: 10%;
+}
+
+.famous-card img{
+  border-radius: 10px;
+}
+
+.famous-content h5{
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400px;
+  color: white;
+  text-transform: uppercase;
+}
+.famous-content h6{
+  font-size: 24px;
+  line-height: 38px;
+  font-weight: 500px;
+  color: white;
+}
+.famous-content p{
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 100px;
+  color: white;
+}
+
+/* Famous Card Ends*/
+
+/* Nuestra Tienda */
+
+.filter-card{
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px 15px;
+}
+
+.filter-title{
+  font-size: 16px;
+}
+
+.filter-card title{
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  color: var(--color-1c1c1b);
+  margin-bottom: 20px;
+}
+
+.filter-card ul{
+  list-style-type: none;
+  font-size: 13px;
+  line-height: 30px;
+  color: var(--color-777777);
+  cursor: pointer;
+}
+
+/* Nuestra Tienda Ends Here*/
