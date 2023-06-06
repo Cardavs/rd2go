@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import {BsLinkedin, BsGithub, BsYoutube, BsInstagram} from "react-icons/bs";
-import newsletter from "../images/newsletter.png"
+import {BsLinkedin, BsGithub, BsYoutube, BsInstagram, BsSend} from "react-icons/bs";
 
 const Footer = () => {
   return( 
@@ -11,7 +10,7 @@ const Footer = () => {
           <div className="row align-items-center">
             <div className="col-5">
               <div className="footer-top-data d-flex gap-30 align-items-center">
-                <img src={newsletter} alt="newsletter" />
+              <BsSend size={36} color="white" />
                 <h2 className='mb-0 text-white'>Sign Up for Newsletter</h2>
               </div>
             </div>
@@ -60,11 +59,10 @@ const Footer = () => {
             <div className="col-3">
               <h4 className='text-white mb-4'>Información</h4>
               <div className='footer-link d-flex flex-column'>
-                <Link to='/privacy-policy' className="text-white py-2 mb-1">Política de Privacidad</Link>
-                <Link to='/refound-policy' className="text-white py-2 mb-1">Política de Reembolsos</Link>
-                <Link to='/shipping-policy' className="text-white py-2 mb-1">Política de Envíos</Link>
-                <Link to='/term-conditions' className="text-white py-2 mb-1">Terminos y Condiciones</Link>
-                <Link to='/' className="text-white py-2 mb-1">Blogs</Link>
+                <Link className="text-white py-2 mb-1">Política de Privacidad</Link>
+                <Link className="text-white py-2 mb-1">Política de Reembolsos</Link>
+                <Link className="text-white py-2 mb-1">Política de Envíos</Link>
+                <Link className="text-white py-2 mb-1">Terminos y Condiciones</Link>
               </div>
             </div>
             <div className="col-3">
@@ -74,7 +72,6 @@ const Footer = () => {
                 <Link className="text-white py-2 mb-1">Sobre Nosotros</Link>
                 <Link className="text-white py-2 mb-1">Faq</Link>
                 <Link className="text-white py-2 mb-1">Contacto</Link>
-                <Link className="text-white py-2 mb-1">Carrito</Link>
               </div>
             </div>
             <div className="col-2">
@@ -84,7 +81,6 @@ const Footer = () => {
                 <Link className="text-white py-2 mb-1">Laptops</Link>
                 <Link className="text-white py-2 mb-1">Audifonos</Link>
                 <Link className="text-white py-2 mb-1">Smart Watches</Link>
-                <Link className="text-white py-2 mb-1">Tablets</Link>
               </div>
             </div>
           </div>

@@ -1,13 +1,12 @@
 import React from 'react'
 import ReactStars from "react-rating-stars-component";
 import { Link, useLocation } from 'react-router-dom';
-import prodcompare from "../images/prodcompare.svg";
-import wish from "../images/wish.svg";
-import wishlist from "../images/wishlist.svg";
+import { BsHeartHalf } from 'react-icons/bs';
+import { MdCompareArrows } from 'react-icons/md';
+import { AiOutlineEye } from 'react-icons/ai';
+import { BsBag } from 'react-icons/bs';
 import watch from "../images/watch.jpg";
 import watch2 from "../images/watch2.jpg";
-import addcart from "../images/add-cart.svg";
-import view from "../images/view.svg";
 
 
 const ProductCard = (props) => {
@@ -18,7 +17,7 @@ const ProductCard = (props) => {
         <div className={` ${location.pathname == "/store" ? `gr-${grid}` : "col-3"}`}>
         <Link to=":id" className="product-card position-relative">
             <div className="wishlist-icon position-absolute">
-                <Link><img src={wish} alt="wishlist" /></Link>
+                <Link><BsHeartHalf size={18} color="black"/></Link>
             </div>
             <div className="product-image">
                 <img src={watch} className='img-fluid' alt="product image" />
@@ -45,13 +44,13 @@ const ProductCard = (props) => {
             </div>
             <div className="action-bar position-absolute">
                 <div className='d-flex flex-column'>
-                    <Link><img src={prodcompare} alt="prodcompare" /></Link>
+                    <Link><MdCompareArrows size={18} color="black"/></Link>
                 </div>
                 <div className='d-flex flex-column'>
-                    <Link><img src={view} alt="view" /></Link>
+                    <Link><AiOutlineEye size={18} color="black"/></Link>
                 </div>
                 <div className='d-flex flex-column'>
-                    <Link><img src={addcart} alt="addcart" /></Link>
+                    <Link><BsBag  size={18} color="black"/></Link>
                 </div>
             </div>
         </Link>
@@ -59,7 +58,7 @@ const ProductCard = (props) => {
         <div className={` ${location.pathname == "/store" ? `gr-${grid}` : "col-3"}`}>
         <Link to=":id" className="product-card position-relative">
             <div className="wishlist-icon position-absolute">
-                <Link><img src={wish} alt="wishlist" /></Link>
+                <Link><BsHeartHalf size={18} color="black"/></Link>
             </div>
             <div className="product-image">
                 <img src={watch} className='img-fluid' alt="product image" />
@@ -86,13 +85,13 @@ const ProductCard = (props) => {
             </div>
             <div className="action-bar position-absolute">
                 <div className='d-flex flex-column'>
-                    <Link><img src={prodcompare} alt="prodcompare" /></Link>
+                    <Link><MdCompareArrows size={18} color="black"/></Link>
                 </div>
                 <div className='d-flex flex-column'>
-                    <Link><img src={view} alt="view" /></Link>
+                    <Link><AiOutlineEye size={18} color="black"/></Link>
                 </div>
                 <div className='d-flex flex-column'>
-                    <Link><img src={addcart} alt="addcart" /></Link>
+                    <Link><BsBag  size={18} color="black"/></Link>
                 </div>
             </div>
         </Link>

@@ -1,9 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Marquee from "react-fast-marquee";
-import BlogCard from '../components/BlogCard';
 import ProductCard from '../components/ProductCard';
 import SpecialProduct from '../components/SpecialProduct';
+
+import { FaShippingFast } from 'react-icons/fa';
+import { AiOutlineGift, AiOutlinePercentage, AiOutlineCreditCard } from 'react-icons/ai'; 
+import { FiHeadphones } from 'react-icons/fi';
 
 const Home = () => {
   return (
@@ -26,7 +29,7 @@ const Home = () => {
               <div className="d-flex flex-wrap gap-10 justify-content-between align-items-center">
                 <div className="small-banner position-relative">
                   <img 
-                  src="images/catbanner-01.jpg" 
+                  src="images/catbanner-04.jpg" 
                   className='img-fluid rounded-3' 
                   alt="main banner" />
                   <div className="small-banner-content position-absolute">
@@ -37,7 +40,7 @@ const Home = () => {
                 </div>
                 <div className="small-banner position-relative">
                   <img 
-                  src="images/catbanner-03.jpg" 
+                  src="images/catbanner-04.jpg" 
                   className='img-fluid rounded-3' 
                   alt="main banner" />
                   <div className="small-banner-content position-absolute">
@@ -48,7 +51,7 @@ const Home = () => {
                 </div>
                 <div className="small-banner position-relative">
                   <img 
-                  src="images/catbanner-02.jpg" 
+                  src="images/catbanner-04.jpg" 
                   className='img-fluid rounded-3' 
                   alt="main banner" />
                   <div className="small-banner-content position-absolute">
@@ -79,35 +82,35 @@ const Home = () => {
             <div className="col-12">
               <div className="services d-flex align-items-center justify-content-between">
                 <div className='d-flex align-items-center gap-15'>
-                  <img src="images/service.png" alt="services" />
+                  <FaShippingFast size={36}/>
                   <div>
                     <h6>Envío Gratis</h6>
                     <p className='mb-0'>Pedidos sobre $100</p>
                   </div>
                 </div>
                 <div className='d-flex align-items-center gap-15'>
-                  <img src="images/service-02.png" alt="services" />
+                  <AiOutlineGift size={36}/>
                   <div>
                     <h6>Ofertas Diarias</h6>
                     <p className='mb-0'>Desde 25%</p>
                   </div>
                 </div>
                 <div className='d-flex align-items-center gap-15'>
-                  <img src="images/service-03.png" alt="services" />
+                  <FiHeadphones size={36}/>
                   <div>
                     <h6>Sopporte 24/7</h6>
                     <p className='mb-0'>Habla con expertos</p>
                   </div>
                 </div>
                 <div className='d-flex align-items-center gap-15'>
-                  <img src="images/service-04.png" alt="services" />
+                  <AiOutlinePercentage size={36}/>
                   <div>
                     <h6>Precios Accesibles</h6>
                     <p className='mb-0'>Precios de Fabrica</p>
                   </div>
                 </div>
                 <div className='d-flex align-items-center gap-15'>
-                  <img src="images/service-05.png" alt="services" />
+                  <AiOutlineCreditCard size={36}/>
                   <div>
                     <h6>Pagos Seguros</h6>
                     <p className='mb-0'>Pagos 100% Protegidos</p>
@@ -135,7 +138,7 @@ const Home = () => {
                       <h6>Smart TV</h6>
                       <p>10 Modelos</p>
                     </div>
-                    <img src="images/TV.jpg" alt="camera" />
+                    <img src="images/camera.jpg" alt="camera" />
                   </div>
                   <div className='d-flex gap align-items-center'>
                     <div>
@@ -149,7 +152,7 @@ const Home = () => {
                       <h6>Musica y Gaming</h6>
                       <p>10 Modelos</p>
                     </div>
-                    <img src="images/headphone.jpg" alt="camera" />
+                    <img src="images/camera.jpg" alt="camera" />
                   </div>
                   <div className='d-flex gap align-items-center'>
                     <div>
@@ -163,7 +166,7 @@ const Home = () => {
                       <h6>Smart TV</h6>
                       <p>10 Modelos</p>
                     </div>
-                    <img src="images/TV.jpg" alt="camera" />
+                    <img src="images/camera.jpg" alt="camera" />
                   </div>
                   <div className='d-flex gap align-items-center'>
                     <div>
@@ -177,7 +180,7 @@ const Home = () => {
                       <h6>Musica y Gaming</h6>
                       <p>10 Modelos</p>
                     </div>
-                    <img src="images/headphone.jpg" alt="camera" />
+                    <img src="images/camera.jpg" alt="camera" />
                   </div>
                   
                 </div>
@@ -223,7 +226,7 @@ const Home = () => {
             </div>
             <div className="col-3">
               <div className="famous-card position-relative">
-                <img src="images/famous-3.png" className="img-fluid" alt="famous"/>
+                <img src="images/famous-2.png" className="img-fluid" alt="famous"/>
                 <div className="famous-content position-absolute">
                   <h5 className="text-dark">Smartphone</h5>
                   <h6 className="text-dark">Smartphone 13 Pro</h6>
@@ -233,7 +236,7 @@ const Home = () => {
             </div>
             <div className="col-3">
               <div className="famous-card position-relative">
-                <img src="images/famous-4.png" className="img-fluid" alt="famous"/>
+                <img src="images/famous-2.png" className="img-fluid" alt="famous"/>
                 <div className="famous-content position-absolute">
                   <h5 className="text-dark">Home Speaker</h5>
                   <h6 className="text-dark">Sonido Envolvente</h6>
@@ -285,51 +288,28 @@ const Home = () => {
                   <img src="images/brand-01.png" alt="brand" />
                 </div>
                 <div className="mx-4 w-25">
-                  <img src="images/brand-02.png" alt="brand" />
+                  <img src="images/brand-01.png" alt="brand" />
                 </div>
                 <div className="mx-4 w-25">
-                  <img src="images/brand-03.png" alt="brand" />
+                  <img src="images/brand-01.png" alt="brand" />
                 </div>
                 <div className="mx-4 w-25">
-                  <img src="images/brand-04.png" alt="brand" />
+                  <img src="images/brand-01.png" alt="brand" />
                 </div>
                 <div className="mx-4 w-25">
-                  <img src="images/brand-05.png" alt="brand" />
+                  <img src="images/brand-01.png" alt="brand" />
                 </div>
                 <div className="mx-4 w-25">
-                  <img src="images/brand-06.png" alt="brand" />
+                  <img src="images/brand-01.png" alt="brand" />
                 </div>
                 <div className="mx-4 w-25">
-                  <img src="images/brand-07.png" alt="brand" />
+                  <img src="images/brand-01.png" alt="brand" />
                 </div>
                 <div className="mx-4 w-25">
-                  <img src="images/brand-08.png" alt="brand" />
+                  <img src="images/brand-01.png" alt="brand" />
                 </div>
               </Marquee>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="blog-wrapper py-5 home-wrapper-2">
-        <div className="container-xxl">
-          <div className="row">
-            <div className="col-12">
-              <h3 className="section-heading">Blogs Mas Recientes</h3>
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-3">
-              <BlogCard />
-            </div>
-            <div className="col-3">
-              <BlogCard />
-            </div>
-            <div className="col-3">
-              <BlogCard />
-            </div>
-            <div className="col-3">
-              <BlogCard />
             </div>
           </div>
         </div>
