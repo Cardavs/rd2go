@@ -67,6 +67,172 @@ a{
 
 /* Header Part */
 
+/* py-3 */
+.header-top-strip {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+/* container-xxl */
+.xxl-container{
+  max-width: 1400px; 
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+/* row */
+.line{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+/* col-6 */
+.fifty-fifty-col{
+  flex-basis: 50%;
+  max-width: 50%;
+}
+
+/* mb-0 text-white*/
+.deliveries{
+  margin-bottom: 0;
+  color: white;
+}
+
+/* text-end text-white mb-0 */
+.atention{
+  margin-bottom: 0;
+  color: white;
+  text-align: right;
+}
+
+.contact-number{
+  color: white;
+}
+
+/* py-3 */
+.header-upper{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.second-header{
+  max-width: 1400px; 
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+.second-header-items{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* col-2 */
+.logo{
+  width: calc((100% / 12) * 2);
+}
+
+.logo h2{
+  margin-bottom: 0;
+}
+
+.logo .link-style {
+  color: white;
+}
+ 
+/* col-5 */
+.search{
+  flex-basis: 40%;
+  max-width: 40%;
+}
+
+/* p-3 */
+.input-group-text{
+  padding: 0.75rem;
+}
+
+/* fs-6 */
+.search-label{
+  font-size: 0.875rem;
+}
+
+.cart-container{
+  flex-basis: 40%;
+  max-width: 40%;
+}
+
+.cart{
+  margin-left: 80%;
+}
+
+.link-cart{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+}
+
+.cart-text-container{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.span-cart{
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: white;
+  color: black;
+  text-align: center;
+}
+
+.cart-price{
+  margin-bottom: 0;
+}
+
+.header-bottom{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* col-12 */
+.bottom-container{
+  width: 100%;
+}
+
+.menu-bottom{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.btn{
+  background: transparent;
+  border: none;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+/* me-5 d-inline-block */
+.categories-header{
+  margin-right: 0.5rem;
+  display: inline-block;
+}
+
+.menu-options{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
 .header-top-strip{
   border-bottom: 1px solid var(--color-05BFDB);
   background-color: var(--color-056e7e);
@@ -125,6 +291,140 @@ a{
 /* Header Part End Here*/
 
 /* Footer Part*/
+
+/* py-4 */
+.main-footer{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.main-footer-container{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  align-items: center;
+}
+
+.footer-sign{
+  flex-basis: 40%;
+  max-width: 40%;
+}
+
+.footer-top-data{
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.footer-top-data h2{
+  margin-bottom: 0px;
+  color: white;
+}
+
+/* col-7 */
+.subscription-bar{
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+  width: 100%;
+}
+
+/* p-2 */
+.input-group-text{
+  padding: 2px;
+}
+
+.form-control{
+  padding: 1px;
+}
+
+.footer-input{
+  text-align: center;
+}
+
+.footer-first-column{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.xxl-footer{
+  max-width: 1200px; 
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+.footer-col-4{
+  width: 25%;
+}
+
+.footer-col-4 h4{
+  color: white;
+  margin-bottom: 4px;
+}
+
+.footer-info{
+  color: white;
+  font-size: 0.875rem;
+}
+
+.phone{
+  display: block;
+  margin-bottom: 1px;
+  color: white;
+  margin-top: 0.75rem;
+}
+
+.mail{
+  display: block;
+  margin-bottom: 0px;
+  color: white;
+  margin-top: 0.5rem;
+}
+
+.social_icons{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-top: 2rem;
+}
+
+.bs{
+  font-size: 1.5rem;
+}
+
+.footer-col-3{
+  width: 25%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  float: left;
+}
+
+.footer-col-3 h4{
+  color: white;
+  margin-bottom: 8px;
+}
+
+.footer-link{
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-end{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.footer-end-text{
+  width: 100%;
+}
+
+.footer-end-text p{
+  text-align: center;
+  margin-bottom: 0px;
+  color: white;
+}
 
 footer{
   background-color: var(--color-088395);
