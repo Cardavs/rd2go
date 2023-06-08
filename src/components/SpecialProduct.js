@@ -4,11 +4,11 @@ import ReactStars from "react-rating-stars-component";
 
 const SpecialProduct = () => {
   return (
-    <div className="col-6 mb-3">
+    <div className="special-product-container">
       <div className="special-product-card">
-        <div className="d-flex justify-content-between">
+        <div className="special-product">
           <div>
-            <img src="images/watch.jpg" className='img-fluid' alt="watch" />
+            <img src="images/watch.jpg" className='special-product-img' alt="watch" />
           </div>
             <div className="special-product-content">
               <h5 className='brand'>Havels</h5>
@@ -25,17 +25,17 @@ const SpecialProduct = () => {
                 <p className='price'>
                   <span className="red-p">$100</span><strike>$200</strike>
                 </p>
-                <div className='discount-till d-flex align-items-center gap-10'>
-                  <p className='mb-0'>
+                <div className='discount-till'>
+                  <p>
                     <b>5 days</b>
                   </p>
-                  <div className="d-flex gap-10 align-items-center">
+                  <div className="discount-time">
                     <span className='badge rounded-circle p-3 bg-danger'>1</span>:
                     <span className='badge rounded-circle p-3 bg-danger'>1</span>:
                     <span className='badge rounded-circle p-3 bg-danger'>1</span>
                   </div>
                 </div>
-                <div className="prod-count my-3">
+                <div className="prod-count">
                     <p>Products: 5</p>
                     <div className="progress">
                       <div 

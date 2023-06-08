@@ -30,30 +30,30 @@ const SingleProduct = () => {
     <>
     <Meta title={"Product Name"}/>
             <BreadCrumb title="Product Name"/>
-            <div className="main-product-wrapper py-5 home-wrapper-2">
-              <div className="container-xxl p-3 bg-white">
-                <div className="row">
-                  <div className="col-6">
+            <div className="main-product-wrapper">
+              <div className="main-product-container">
+                <div className="line-row">
+                  <div className="fifty-fifty-col">
                     <div className="main-product-image">
                       <div>
                         <ReactImageZoom {...props} />
                       </div>
                     </div>
-                    <div className="other-product-images d-flex flex-wrap gap-15">
+                    <div className="other-product-images">
                       <div><img src="https://magazine.chrono24.com/cdn-cgi/image/f=auto,metadata=none,fit=cover,q=65,w=1190,h=595,dpr=2.0/2023/01/Omega-2-1-1.jpg" className='img-fluid' alt="" /></div>
                       <div><img src="https://magazine.chrono24.com/cdn-cgi/image/f=auto,metadata=none,fit=cover,q=65,w=1190,h=595,dpr=2.0/2023/01/Omega-2-1-1.jpg" className='img-fluid' alt="" /></div>
                       <div><img src="https://magazine.chrono24.com/cdn-cgi/image/f=auto,metadata=none,fit=cover,q=65,w=1190,h=595,dpr=2.0/2023/01/Omega-2-1-1.jpg" className='img-fluid' alt="" /></div>
                       <div><img src="https://magazine.chrono24.com/cdn-cgi/image/f=auto,metadata=none,fit=cover,q=65,w=1190,h=595,dpr=2.0/2023/01/Omega-2-1-1.jpg" className='img-fluid' alt="" /></div>
                     </div>
                   </div>
-                  <div className="col-6">
+                  <div className="fifty-fifty-col">
                     <div className="main-product-details">
                       <div className="border-bottom">
                         <h3 className='title'>Reloj a la moda G344</h3>
                       </div>
-                      <div className="border-bottom py-3">
+                      <div className="border-bottom-2">
                         <p className="price">$ 100.00</p>
-                        <div className="d-flex align-items-center gap-10">
+                        <div className="stars">
                           <ReactStars
                             count={5}
                             size={24}
@@ -61,7 +61,7 @@ const SingleProduct = () => {
                             edit={false}
                             activeColor="#ffd700"
                           />
-                          <p className='mb-0 t-review'>(2 Reviews)</p>
+                          <p>(2 Reviews)</p>
                         </div>
                         <a className='review-btn' href="#review">Escribe una Reseña</a>
                       </div>
@@ -133,12 +133,12 @@ const SingleProduct = () => {
                 </div>
               </div>
             </div>
-      <div className="description-wrapper py-5 home-wrapper-2">
-        <div className="container-xxl">
-          <div className="row">
-            <div className="col-12">
+      <div className="description-wrapper">
+        <div className="xxl-container">
+          <div className="line-row">
+            <div className="onh-container">
                 <h4>Descripción</h4>
-              <div className="bg-white p-3">
+              <div className="product-description">
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor amet iusto est quis! Reiciendis cupiditate commodi veritatis, laboriosam voluptatum et sit temporibus in numquam nihil vero inventore? Odit, maxime at!
                 </p>
@@ -148,15 +148,15 @@ const SingleProduct = () => {
         </div>
       </div>
       <section className="reviews-wrapper home-wrapper-2">
-        <div className="container-xxl">
-          <div className="row">
-            <div className="col-12">
+        <div className="xxl-container">
+          <div className="line-row">
+            <div className="onh-container">
               <h3 id='review'>Reseñas</h3>
               <div className="review-inner-wrapper">
-                <div className="review-head d-flex justify-content-between align-items-end">
+                <div className="review-head">
                   <div>
-                    <h4 className='mb-2'>Reseñas de Clientes</h4>
-                      <div className='d-flex align-items-center gap-10'>
+                    <h4>Reseñas de Clientes</h4>
+                      <div className='review-stars'>
                         <ReactStars
                           count={5}
                           size={24}
@@ -164,19 +164,19 @@ const SingleProduct = () => {
                           edit={false}
                           activeColor="#ffd700"
                         />
-                        <p className='mb-0'>Based on 2 Reviews</p>
+                        <p>Based on 2 Reviews</p>
                       </div>
                   </div>
                   {
                     orderedProduct&&
                     <div>
-                    <a className='text-dark text-decoration-underline' href="">Escribir uns Reseña</a>
+                    <a className='write' href="">Escribir uns Reseña</a>
                   </div>
                   }
                 </div>
-                <div className='review-form py-4'>
+                <div className='review-form'>
                   <h4>Escribe una Reseña</h4>
-                  <form action="" className='d-flex flex-column gap-15'>
+                  <form action="" className='review-forms'>
                     <div>
                         <ReactStars
                           count={5}
@@ -189,15 +189,15 @@ const SingleProduct = () => {
                     <div>
                       <textarea className="w-100 form-control" id="" cols="30" rows="4" placeholder='Comentarios'></textarea>
                     </div>
-                    <div className='d-flex justify-content-end'>
-                      <button className='button boreder-0'>Enviar</button>
+                    <div className='send'>
+                      <button className='button'>Enviar</button>
                     </div>
                   </form>
                 </div>
-                <div className="reviews mt-4">
+                <div className="reviews">
                   <div className="review">
-                        <div className='d-flex gap-10 align-items-center'>
-                          <h6 className='mb-0'>NavDeep</h6>
+                        <div className='stars-reviewed'>
+                          <h6>NavDeep</h6>
                           <ReactStars
                             count={5}
                             size={24}
@@ -206,7 +206,7 @@ const SingleProduct = () => {
                             activeColor="#ffd700"
                           />
                         </div>
-                        <p className='mt-3'>
+                        <p>
                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, veniam pariatur. Commodi quasi sequi earum expedita molestias repellat ea similique sint veniam nisi ducimus et, voluptas libero molestiae accusamus recusandae!
                         </p>
                   </div>
@@ -216,15 +216,15 @@ const SingleProduct = () => {
           </div>
         </div>
       </section>
-      <section className="popular-wrapper py-5 home-wrapper-2">
-        <div className="container-xxl">
-          <div className="row">
-            <div className="col-12">
+      <section className="popular-wrapper">
+        <div className="xxl-container">
+          <div className="line-row">
+            <div className="onh-container">
               <h3 className="section-heading">Productos Populares</h3>
             </div>
             
           </div>
-          <div className="row">
+          <div className="line-row">
             <ProductCard />
           </div>
         </div>
